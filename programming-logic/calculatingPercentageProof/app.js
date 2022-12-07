@@ -1,0 +1,1 @@
+document.write("Eu acertei: " + 15 / 50 * 100 + "%");
