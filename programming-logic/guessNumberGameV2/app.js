@@ -1,6 +1,5 @@
-
-function raffle(number) {
-    return Math.round(Math.random() * number);
+function raffle() {
+    return Math.round(Math.random() * 10);
 }
 
 function raffleNumber(quantity) {
@@ -8,14 +7,15 @@ function raffleNumber(quantity) {
     var number = 1;
     while (number <= quantity) {
 
-        var randomNumber = raffle(10);
-        if (randomNumber != 0) {
+        var randomNumber = raffle();
+
+        if (randomNumber !== 0) {
 
             var found = false;
 
             for (var i = 0; i < secret.length; i++) {
                 if (secret[i] == randomNumber) {
-                    found == true;
+                    found = true;
                     break;
                 }
             }
@@ -30,7 +30,7 @@ function raffleNumber(quantity) {
 
 function verify() {
     var found = false;
-    for (var i = 0; i <= secret.length; i++) {
+    for (var i = 0; i < secret.length; i++) {
         if (input.value == secret[i]) {
             alert("VOCÊ ACERTOU!");
             found = true;
