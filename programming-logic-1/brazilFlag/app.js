@@ -1,7 +1,6 @@
 var canvas = document.querySelector("canvas");
 var brushTool = canvas.getContext("2d");
 
-
 brushTool.fillStyle = "darkgreen";
 brushTool.fillRect(0, 0, 600, 400);
 
@@ -23,9 +22,3 @@ brushTool.fillStyle = "darkblue";
 brushTool.beginPath();
 brushTool.arc(300, 200, 100, 0, 2 * 3.14);
 brushTool.fill();
-
-
-
-
-
-

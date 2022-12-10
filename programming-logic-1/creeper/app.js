@@ -12,9 +12,3 @@ brushTool.fillRect(340, 200, 70, 100);
 
 brushTool.fillRect(300, 240, 40, 110);
 brushTool.fillRect(410, 240, 40, 110);
-
-
-
-
-
-

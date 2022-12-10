@@ -1,17 +1,19 @@
 var canvas = document.querySelector("canvas");
 var brushTool = canvas.getContext("2d");
 
-brushTool.fillStyle = "dark";
-brushTool.beginPath();
-brushTool.moveTo(50, 50);
-brushTool.lineTo(50, 400);
-brushTool.lineTo(400, 400);
-brushTool.fill();
+function drawFraming(xa, ya, xc, yc, color) {
+    brushTool.fillStyle = color;
+    brushTool.beginPath();
+    brushTool.moveTo(xa, ya);
+    brushTool.lineTo(xa, yc);
+    brushTool.lineTo(xc, yc);
+    brushTool.fill();
 
-brushTool.fillStyle = "white";
-brushTool.beginPath();
-brushTool.moveTo(100, 175);
-brushTool.lineTo(100, 350);
-brushTool.lineTo(275, 350);
-brushTool.fill();
-
+    brushTool.fillStyle = "white";
+    brushTool.beginPath();
+    brushTool.moveTo((6 * xa + xc) / 7, (9 * ya + 5 * yc) / 14);
+    brushTool.lineTo((6 * xa + xc) / 7, (ya + 6 * yc) / 7);
+    brushTool.lineTo((5 * xa + 9 * xc) / 14, (ya + 6 * yc) / 7);
+    brushTool.fill();
+}
+drawFraming(50, 50, 400, 400, "black");
