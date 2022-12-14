@@ -7,7 +7,7 @@ brushTool.fillRect(0, 0, 600, 400);
 function drawCircle(x, y, radius, color) {
     brushTool.fillStyle = color;
     brushTool.beginPath();
-    brushTool.arc(x, y, radius, 0, 2 * 3.14);
+    brushTool.arc(x, y, radius, 0, 2 * Math.PI);
     brushTool.fill();
 }
 

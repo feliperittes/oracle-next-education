@@ -13,7 +13,7 @@ function drawCircle(event) {
     }
     brushTool.fillStyle = 'blue';
     brushTool.beginPath();
-    brushTool.arc(x, y, radius, 0, 2 * 3.14);
+    brushTool.arc(x, y, radius, 0, 2 * Math.PI);
     brushTool.fill();
 }
 canvas.onclick = drawCircle;

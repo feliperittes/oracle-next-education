@@ -20,5 +20,5 @@ brushTool.fill();
 
 brushTool.fillStyle = "darkblue";
 brushTool.beginPath();
-brushTool.arc(300, 200, 100, 0, 2 * 3.14);
+brushTool.arc(300, 200, 100, 0, 2 * Math.PI);
 brushTool.fill();

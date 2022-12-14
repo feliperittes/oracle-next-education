@@ -9,7 +9,7 @@ function drawCircle(event) {
     var y = event.pageY - canvas.offsetTop;
     brushTool.fillStyle = "darkgreen";
     brushTool.beginPath();
-    brushTool.arc(x, y, 10, 0, 2 * 3.14);
+    brushTool.arc(x, y, 10, 0, 2 * Math.PI);
     brushTool.fill();
     console.log("X = " + x + ", " + "Y = " + y)
 }
